@@ -32,11 +32,22 @@ a
 # reduce(함수, 순서형 자료)
 # 순서형 자료(문자열, 리스트, 튜플)의 원소들을 누적해서 함수적용
 from functools import reduce  
-reduce(lambda x, y: x + y, [0, 1, 2, 3, 4])
+reduce(lambda x, y: x + y, [0, 1, 2, 3, 4]) # = ((((0+1)+2)+3)+4)
 # 10
 reduce(lambda x, y: y + x, 'abcde')
 # 'edcba'
 
+# 문제1. 전통적으로 최대값 구하기
+def maximum(li):
+    default = 0
+    for e in li:
+        if default < e:
+            default = e
+    return default
+maximum([1, 2, 3, 4, 5]) # 5
+
+# 문제1. reduce 활용하여 최대값 구하기
+reduce(lambda a,b: a if a > b else b ,[1, 2, 3, 4, 5]) # 5
 
 # filter(함수, 리스트)
 #0부터 9까지의 리스트 중에서 5보다 작은 것만 돌려주는 예제

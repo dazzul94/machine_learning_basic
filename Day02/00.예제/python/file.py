@@ -22,7 +22,6 @@ with open('file2.txt', 'r') as file:    # file.txt 파일을 읽기 모드(r)로
     lines = file.readlines()
     print(lines)
 
-
 with open('file2.txt', 'r') as file:    # file.txt 파일을 읽기 모드(r)로 열기
     line = None    # 변수 line을 None으로 초기화
     while line != '':
