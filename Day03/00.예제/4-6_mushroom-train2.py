@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 
 import glob, os.path, re, json
 print('cwd: '+ os.getcwd())
-os.chdir('./day3')
+# os.chdir('./day3')
 
 # 데이터 읽어 들이기
 mr = pd.read_csv("mushroom.csv", header=None)
@@ -15,9 +15,9 @@ label = []
 data = []
 attr_list = []
 for row_index, row in mr.iterrows():
-    label.append(row.ix[0])
+    label.append(row.iloc[0])
     exdata = []
-    for col, v in enumerate(row.ix[1:]):
+    for col, v in enumerate(row.iloc[1:]):
         if row_index == 0:
             attr = {"dic": {}, "cnt":0}
             attr_list.append(attr)

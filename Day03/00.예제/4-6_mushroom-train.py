@@ -5,12 +5,12 @@ from sklearn.model_selection import train_test_split
 
 import glob, os.path, re, json
 # print('cwd: '+ os.getcwd())
-os.chdir('./day3')
+# os.chdir('./day3')
 # 데이터 읽어 들이기--- (※1)
 mr = pd.read_csv("mushroom.csv", header=None)
 
-# df_mr = pd.DataFrame(mr)
-# print(df_mr.head())
+df_mr = pd.DataFrame(mr)
+print(df_mr.head())
 # exit() 
 #----------------------------------
 
@@ -19,9 +19,9 @@ label = []
 data = []
 attr_list = []
 for row_index, row in mr.iterrows():
-    label.append(row.ix[0])
+    label.append(row.iloc[0])
     row_data = []
-    for v in row.ix[1:]:
+    for v in row.iloc[1:]:
         row_data.append(ord(v))
     data.append(row_data)
 
