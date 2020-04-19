@@ -122,3 +122,6 @@ dmypy.json
 .pyre/
 
 # End of https://www.gitignore.io/api/python,jupyternotebooks
+
+## 폴더 무시
+Day05/01.형태소분석/file
