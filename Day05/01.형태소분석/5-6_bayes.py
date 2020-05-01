@@ -1,3 +1,6 @@
+'''
+이거도 다시
+'''
 import math, sys
 from konlpy.tag import Twitter
 class BayesianFilter:

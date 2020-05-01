@@ -1,3 +1,6 @@
+'''
+이거도 다시
+'''
 from bayes import BayesianFilter
 bf = BayesianFilter()
 # 텍스트 학습

@@ -1,5 +1,5 @@
 import os, glob, json
-root_dir = "./file/신문파일/"
+root_dir = "./file/newstext"
 dic_file = root_dir + "/word-dic.json"
 data_file = root_dir + "/data.json"
 data_file_min = root_dir + "/data-mini.json"

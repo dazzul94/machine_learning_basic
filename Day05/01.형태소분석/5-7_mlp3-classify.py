@@ -24,7 +24,7 @@ def build_model():
     return model
 
 # 데이터 읽어 들이기--- (※2)
-data = json.load(open("./file/신문파일/data-mini.json")) 
+data = json.load(open("./file/newstext/data-mini.json")) 
 print(data)
 #data = json.load(open("./newstext/data.json"))
 X = data["X"] # 텍스트를 나타내는 데이터
